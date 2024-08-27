@@ -6,9 +6,9 @@ WORKDIR /usr/share/nginx/html
 
 RUN rm -rf *
 
-COPY --chown=app:app /var/lib/jenkins/workspace/Hospitol-frontend/dist/doctor-appointment/3rdpartylicenses.txt /usr/share/nginx/html/
+COPY --chown=app:app /dist/doctor-appointment/3rdpartylicenses.txt /usr/share/nginx/html/
 
-COPY --chown=app:app /var/lib/jenkins/workspace/Hospitol-frontend/dist/doctor-appointment/* /usr/share/nginx/html/
+COPY --chown=app:app /dist/doctor-appointment/* /usr/share/nginx/html/
 
 EXPOSE 80
 
