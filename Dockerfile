@@ -14,5 +14,5 @@ EXPOSE 80
 
 HEALTHCHECK CMD curl --fail http://localhost:80/healthcheck
 
-CMD ['/usr/local/bin/nginx', '-g', 'daemon off;']
+RUN apk add nginx
 
