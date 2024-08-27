@@ -14,5 +14,5 @@ EXPOSE 80
 
 HEALTHCHECK CMD curl --fail http://localhost:80/healthcheck
 
-CMD ['nginx', '-g', 'daemon off;']
+CMD ['/usr/local/bin/nginx', '-g', 'daemon off;']
 
