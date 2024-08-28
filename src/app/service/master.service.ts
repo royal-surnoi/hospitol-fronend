@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class MasterService {
   
   production:true | undefined
-  apiEndPoint: string = "https://d2mbmw5j4kz5f7.cloudfront.net/api/HospitalAppointment/";
+  apiEndPoint: string = "https://internal-myhospital-lb-1694732085.us-east-1.elb.amazonaws.com:8080/api/HospitalAppointment/";
   constructor(private http: HttpClient) { }
 
   createNew(obj:any): Observable<any> {
